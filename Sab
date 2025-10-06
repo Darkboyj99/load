@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Screen</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #1e1e1e;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .loading-container {
+            text-align: center;
+        }
+        .loading-text {
+            font-size: 3em;
+            font-weight: bold;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .brain-icon {
+            margin: 0 10px;
+        }
+        .script-loading {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        .percentage {
+            font-size: 2em;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .map-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('path-to-your-map-image.png') no-repeat center center;
+            background-size: cover;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="map-background"></div>
+    <div class="loading-container">
+        <div class="loading-text">
+            <span class="brain-icon">🧠</span>
+            Steal a Brainrot
+            <span class="brain-icon">🧠</span>
+        </div>
+        <div class="script-loading">
+            Script Loading Please Wait a While<br>
+            Don't worry, your base will be automatically locked
+        </div>
+        <div class="percentage">
+            100%
+        </div>
+    </div>
+</body>
+</html>
